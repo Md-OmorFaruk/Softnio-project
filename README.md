@@ -4,7 +4,7 @@ A responsive and visually engaging website for a restaurant, built to showcase t
 
 Website Link
 -----------------------------
-View the live website here
+https://ubiquitous-squirrel-25974b.netlify.app/
 
 Features
 -----------------------------

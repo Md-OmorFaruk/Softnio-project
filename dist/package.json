@@ -1,0 +1,18 @@
+{
+  "name": "project.html",
+  "version": "1.0.0",
+  "description": "A Tailwind CSS project with DaisyUI and PostCSS",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -o ./dist/output.css --minify",
+    "start": "live-server",
+    "dev": "tailwindcss -o ./dist/output.css --watch"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "daisyui": "^4.12.14",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.14"
+  },
+  "browserslist": "> 0.2%, not dead"
+}
