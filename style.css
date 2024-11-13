@@ -1,0 +1,66 @@
+.font-main {
+                  font-family: "Bebas Neue", sans-serif;
+            }
+
+            .roboto {
+                  font-family: "Roboto", sans-serif;
+            }
+            .montserrat {
+                  font-family: "Montserrat", sans-serif;
+            }
+
+            .inter {
+                  font-family: "Inter", sans-serif;
+            }
+            .raleway{
+                  font-family: "Raleway", sans-serif;
+            }
+
+           
+            /* Responsive image */
+            img {
+                  max-width: 100%;
+                  height: auto;
+            }
+
+            
+
+
+
+       
+
+        .tab-content {
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            background-color: rgba(142, 27, 15, 0.1);
+        }
+
+        .hidden {
+            display: none;
+        }
+
+header {
+  background: 
+    linear-gradient(123.4deg, rgba(189, 31, 23, 0.8) 100%, rgba(165, 29, 19, 0.8) 100%, rgba(142, 27, 15, 0.8) 100%),
+    url('/images/bg.png');
+  background-repeat: repeat;
+  background-size: 80px;
+  background-position: center;
+}
+
+
+  /* Optionally add a transition effect */
+  .carousel-item {
+    transition: opacity 1s ease;
+  }
+
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.carousel-item {
+    min-width: 100%;
+}
+

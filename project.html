@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Restaurant Website</title>
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link rel="stylesheet" href="style.css">
+
+      <!-- Bebas Neue --> 
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+       <!-- Font Roboto -->
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+      
+      <!-- montserrat  -->
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+                  rel="stylesheet">
+
+      <!-- Font Inter -->
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet">
+
+      <!-- Font Railway -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+
+      </head>
+
+      <body>
+      <header class=" sticky top-0 z-50 pr-5 pl-5 lg:pr-0 lg:pl-0">
+                  <!------------------------
+                         Navbar
+                  ------------------------->
+                        <div class="navbar max-w-screen-xl mx-auto raleway  z-50 ">
+                              <div class="navbar-start flex items-center justify-between w-full lg:w-1/2">
+                                    <div class="flex gap-0 items-center">
+                                          <img src="/images/Frame.png" alt="" class="w-10 h-10 mr-1">
+                                          <a class="btn btn-ghost p-0 text-xl text-white">Restaurant</a>
+                                    </div>
+                                    <div class="dropdown lg:hidden">
+                                          <div tabindex="0" role="button" class="btn btn-ghost">
+                                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white"
+                                                class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                          </svg>
+
+
+                                          </div>
+                                          <ul tabindex="0"
+                                                class="menu menu-sm dropdown-content dropdown-end rounded-box mt-3 w-52 p-2 shadow right-0 bg-black z-[1] text-white">
+                                                <li><a>Home</a></li>
+                                                <li><a>About</a></li>
+                                                <li><a>Portfolio</a></li>
+                                                <li><a>Clients</a></li>
+                                                <li><a>Blog</a></li>
+                                                <li><a>Contact</a></li>
+                                          </ul>
+                                    </div>
+                              </div>
+                              <div class="navbar-center hidden lg:flex">
+                                    <ul class="menu menu-horizontal px-1 mr-16 text-white">
+                                          <li><a>Home</a></li>
+                                          <li><a>About</a></li>
+                                          <li><a>Portfolio</a></li>
+                                          <li><a>Clients</a></li>
+                                          <li><a>Blog</a></li>
+                                          <li><a>Contact</a></li>
+                                    </ul>
+                              </div>
+                              <div class="navbar-end hidden lg:flex">
+                                    <a class="btn bg-[#FEBF00] border-none rounded-none">Book A Table</a>
+                              </div>
+                        </div>
+
+      </header>
+    
+       <div class="carousel relative w-full overflow-hidden">
+            <!-- Slide 1 -->
+            <div id="slide1" class="carousel-item relative w-full"
+                  style="background: linear-gradient(123.4deg, rgba(189, 31, 23, 0.8) 100%, rgba(165, 29, 19, 0.8) 100%, rgba(142, 27, 15, 0.8) 100%), url('/images/bg.png'); background-repeat: repeat; background-size: 80px; background-position: center;">
+                  <div class="max-w-screen-xl mx-auto flex flex-col lg:flex-row lg:my-28 gap-10 relative p-6 lg:p-0">
+                        <!-- Left Side Content with Absolute Positioning -->
+                        <div class="text-left text-white relative z-10 mr-0 lg:-mr-40 mt-0 lg:mt-10">
+                              <h1
+                                    class="text-5xl md:text-8xl font-main font-bold bg-none lg:bg-gradient-to-l from-[rgba(255,0,0,0.4)] pt-5 pb-0 pr-5">
+                                    Taste the authentic <br> Saudi cuisine
+                              </h1>
+                              <p class="py-5 roboto text-base md:text-lg w-full">
+                                    Among the best Saudi chefs in the world, serving <br> you something beyond flavor.
+                              </p>
+                              <button
+                                    class="pt-3 pb-3 pl-7 pr-7 font-bold bg-[#FEBF00] text-black border-none uppercase roboto">
+                                    Explore Menu
+                              </button>
+                        </div>
+      
+                        <!-- Right Side Image -->
+                        <div class="relative">
+                              <img src="/images/image 1.png" alt="Restaurant Image" class="w-full lg:max-w-lg h-auto">
+                              <img src="images/vec.png" alt="" class="absolute -top-5 right-2">
+                        </div>
+                  </div>
+                  
+            </div>
+                  
+            </div>
+            
+    
+
+      <!------------------------
+             Section 02
+      ------------------------->
+
+      <div class="relative">
+
+     <div class="hero max-w-screen-xl mx-auto mt-10">
+            <div class="hero-content flex-col xl:flex-row items-start gap-4 md:gap-20">
+                  <img src="/images/Image.png" class="w-full flex-1 p-0 m-0 " alt="Example Image" />
+                  <div class="max-w-2xl mx-auto  flex-1">
+                        <div class=" sm:mx-auto  ">
+                              <div role="tablist" aria-label="tabs"
+                                    class="relative  h-12 grid grid-cols-3 items-center px-[3px]   overflow-hidden border-b-2 border-red-500 ">
+                                    <div class="absolute indicator h-12 my-auto top-0 bottom-0 left-0 bg-red-500 ">
+                                    </div>
+                                    <button role="tab" aria-selected="true" aria-controls="panel-1" id="tab-1" tabindex="0"
+                                          class="relative block h-10 px-6 tab inter text-xl text-black">
+                                          <span>About</span>
+                                    </button>
+                                    <button role="tab" aria-selected="false" aria-controls="panel-2" id="tab-2" tabindex="-1"
+                                          class="relative block h-10 px-6 tab rounded-full">
+                                          <span class="text-black inter text-xl">Experience</span>
+                                    </button>
+                                    <button role="tab" aria-selected="false" aria-controls="panel-3" id="tab-3" tabindex="-1"
+                                          class="relative block h-10 px-6 tab rounded-full">
+                                          <span class="text-black inter text-xl">Contact</span>
+                                    </button>
+                              </div>
+                              <div class="mt-6 relative rounded-3xl">
+                                    <div role="tabpanel" id="panel-1" class="tab-panel  transition duration-300">
+                                          <h2 class="text-5xl font-semibold text-[#181818] tracking-wider uppercase font-main">Exceptional culinary <br> experience and delicious food</h2>
+                                          <p class="mt-4 text-gray-600 roboto text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed est cursus. Vel hac convallis ipsum, facilisi
+                                          odio pellentesque bibendum viverra tempus. Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor
+                                          incididunt ut labore et dolore magna minim veniam nostrud exercitation.</p>
+                                          <div class="flex  mt-10">
+                                                <button class="font-bold pl-5 pr-4 md:pl-7 md:pr-7 roboto btn-primary bg-[#FEBF00] text-black border-none rounded-none text-base  md:text-lg pt-3 pb-3 md:pt-5 md:pb-5 uppercase">about more</button>
+                                                      <div>
+                                                            <button
+                                                                  class="font-bold pl-7 pr-7 roboto btn-primary  text-black border-none rounded-none text-lg pt-5 pb-5  uppercase flex items-center gap-3"><span><img src="/images/call-alt.png" alt=""></span> +88 3426 739 485</button>
+                                                      </div>
+                                          </div>
+                                    </div>
+                                    <div role="tabpanel" id="panel-2"
+                                          class="absolute top-0 invisible opacity-0 tab-panel transition duration-300">
+                                          <h2 class="text-5xl font-semibold text-[#181818] tracking-wider uppercase font-main">Exceptional <br> culinary 
+                                                experience and delicious food</h2>
+                                          <p class="mt-4 text-gray-600 roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed est cursus.
+                                                Vel hac convallis ipsum, facilisi
+                                                odio pellentesque bibendum viverra tempus. Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod
+                                                tempor
+                                                incididunt ut labore et dolore magna minim veniam nostrud exercitation.</p>
+                                          <div class="flex  mt-8">
+                                                <button
+                                                      class="font-bold pl-5 pr-4 md:pl-7 md:pr-7 roboto btn-primary bg-[#FEBF00] text-black border-none rounded-none text-base  md:text-lg pt-3 pb-3 md:pt-5 md:pb-5 uppercase">about
+                                                      more</button>
+                                                <div>
+                                                      <button
+                                                            class="font-bold pl-7 pr-7 roboto btn-primary  text-black border-none rounded-none text-lg pt-5 pb-5  uppercase flex items-center gap-3"><span><img
+                                                                        src="/images/call-alt.png" alt=""></span> +88 3426 739 485</button>
+                                                </div>
+                                                </div>
+                                    </div>
+                                    <div role="tabpanel" id="panel-3" class="absolute top-0 invisible opacity-0 tab-panel  transition duration-300">
+                                          <h2 class="text-5xl font-semibold text-[#181818] tracking-wider uppercase font-main">Exceptional culinary 
+                                                experience and delicious food</h2>
+                                          <p class="mt-4 text-gray-600 roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed est
+                                                cursus.
+                                                Vel hac convallis ipsum, facilisi
+                                                odio pellentesque bibendum viverra tempus. Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod
+                                                tempor
+                                                incididunt ut labore et dolore magna minim veniam nostrud exercitation.</p>
+                                          <div class="flex  mt-10">
+                                          <button
+                                                class="font-bold pl-5 pr-4 md:pl-7 md:pr-7 roboto btn-primary bg-[#FEBF00] text-black border-none rounded-none text-base  md:text-lg pt-3 pb-3 md:pt-5 md:pb-5 uppercase">about
+                                                more</button>
+                                          <div>
+                                                <button
+                                                      class="font-bold pl-7 pr-7 roboto btn-primary  text-black border-none rounded-none text-lg pt-5 pb-5  uppercase flex items-center gap-3"><span><img
+                                                                  src="/images/call-alt.png" alt=""></span> +88 3426 739 485</button>
+                                          </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+            <div class="absolute top-64 right-0 z-10 hidden xl:inline-block">
+                  <img src="/images/top-view-bell-pepper-pepper-sliced-black-bowl-white-horizontal 2.png" alt="" class="w-32">
+            </div>
+ </div>
+      <!------------------------
+       Section 03 
+      ------------------------->
+
+      <div class="relative">
+
+      <div class=" max-w-screen-xl mx-auto p-0 md:p-8  rounded-3xl pl-5 md:pl-0 mt-8 md:mt-16 mb-8 md:mb-5">
+            <div class=" flex flex-col md:flex-row justify-between gap-7 md:gap-0">
+                  <div class="text-center flex items-center justify-start md:justify-center gap-5 ">
+                        <p>
+                              <img src="images/Group 1707477980.png" alt="" class="w-24 h-24 object-cover">
+                  
+                  
+                        </p>
+                        <div>
+                              <h2 class="text-3xl font-extrabold text-[#0A1425] mt-2 mb-2 uppercase font-main">fast delivery</h2>
+                              <p class="text-base font-medium text-[#737373] roboto">Within 30 minutes</p>
+                        </div>
+                  </div>
+                  <div class="text-center flex items-center justify-start md:justify-center gap-5">
+                        <p>
+                              <img src="images/Group 1707477980 (1).png" alt="" class="w-24 h-24 object-cover">
+                  
+                  
+                        </p>
+                        <div>
+                              <h2 class="text-3xl font-extrabold text-[#0A1425] mt-2 mb-2 uppercase font-main">absolute dining</h2>
+                              <p class="text-base font-medium text-[#737373] roboto">Best buffet restaurant</p>
+                        </div>
+                  </div>
+                  <div class="text-center flex items-center justify-start md:justify-center gap-5">
+                        <p>
+                              <img src="images/Group 1707477980 (2).png" alt="" class="w-24 h-24 object-cover">
+      
+      
+                        </p>
+                        <div>
+                              <h2 class="text-3xl font-extrabold text-[#0A1425] mt-2 mb-2 uppercase font-main">pickup delivery</h2>
+                              <p class="text-base font-medium text-[#737373] roboto">Grab your food order</p>
+                        </div>
+                  </div>
+                  
+            </div>
+      </div>
+      <div class="absolute top-96 left-0 z-10 hidden xl:inline-block">
+            <img src="/images/Frame 1707478073.png" alt="" class="w-32">
+      </div>
+</div>
+
+
+      <!------------------------
+             Section 04
+      ------------------------->
+<div class="bg-[#FBF7F2] pt-14 pb-20">
+      <div class="max-w-screen-xl mx-auto relative">
+            <!-- Title Section with Arrows -->
+            <div class="flex items-center gap-6 ml-6 md:ml-0">
+                  <img src="images/rectangle.png" alt="" class="w-4 h-4">
+                  <h2 class="text-[#BD1F17] roboto font-bold text-base ">Crispy, Every Bite Taste</h2>
+
+                  <!-- Arrow buttons on the right side -->
+                  <div class="flex gap-4 ml-auto ">
+                        <button id="prevSlide" class="bg-white hidden md:inline-block hover:bg-gray-400 p-2 rounded-full">
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M15 19l-7-7 7-7" />
+                              </svg>
+                        </button>
+                        <button id="nextSlide" class="bg-white  hidden md:inline-block hover:bg-gray-400 p-2 rounded-full">
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M9 5l7 7-7 7" />
+                              </svg>
+                        </button>
+                  </div>
+            </div>
+
+            <h1 class="font-main text-5xl text-black mt-3 mb-7 ml-6 md:ml-0">POPULAR FOOD ITEMS</h1>
+
+            <!-- Slider Wrapper -->
+            <div class="overflow-hidden relative pl-16 md:pl-0">
+                  <div id="slider" class="flex gap-10 transition-transform duration-500">
+                        <!-- Slide 1 -->
+                        <div class="flex gap-20 md:gap-8">
+                              <div class="card bg-base-100 w-72 shadow-sm rounded-none">
+                                    <figure class="px-10 pt-10">
+                                          <img src="/images/burger.png" alt="Burger" class="w-24 h-24" />
+                                    </figure>
+                                    <div class="card-body items-center text-center">
+                                          <img src="/images/Line 173.png" alt="">
+                                          <h2 class="card-title uppercase font-main mt-4">Vegetables Burger</h2>
+                                          <p class="font-main">Barbecue Italian cuisine pizza</p>
+                                    </div>
+                              </div>
+                              <div class="card bg-base-100 w-72 shadow-sm rounded-none">
+                                    <figure class="px-10 pt-10">
+                                          <img src="/images/pizza 1.png" alt="Pizza" class="w-24 h-24" />
+                                    </figure>
+                                    <div class="card-body items-center text-center">
+                                          <img src="/images/Line 173.png" alt="">
+                                          <h2 class="card-title uppercase font-main mt-4">Special Pizza</h2>
+                                          <p class="font-main">Barbecue Italian cuisine pizza</p>
+                                    </div>
+                              </div>
+                              <div class="card bg-base-100 w-72 shadow-sm rounded-none">
+                                    <figure class="px-10 pt-10">
+                                          <img src="/images/french-fries 1.png" alt="French Fries" class="w-24 h-24" />
+                                    </figure>
+                                    <div class="card-body items-center text-center">
+                                          <img src="/images/Line 173.png" alt="">
+                                          <h2 class="card-title uppercase font-main mt-4">Special French Fries</h2>
+                                          <p class="font-main">Barbecue Italian cuisine</p>
+                                    </div>
+                              </div>
+                              <div class="card bg-base-100 w-72 shadow-sm rounded-none">
+                                    <figure class="px-10 pt-10">
+                                          <img src="/images/fried-shrimp-prawn-cake-white-plate 1 (1).png" alt="Chicken"
+                                                class="w-24 h-24" />
+                                    </figure>
+                                    <div class="card-body items-center text-center">
+                                          <img src="/images/Line 173.png" alt="">
+                                          <h2 class="card-title uppercase font-main mt-4">Cuisine Chicken</h2>
+                                          <p class="font-main">Japanese Cuisine Chicken</p>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <!-- Slide 2 (Duplicate of Slide 1) -->
+                        <div class="flex gap-8">
+                              <div class="card bg-base-100 w-72 shadow-sm rounded-none">
+                                    <figure class="px-10 pt-10">
+                                          <img src="/images/burger.png" alt="Burger" class="w-24 h-24" />
+                                    </figure>
+                                    <div class="card-body items-center text-center">
+                                          <img src="/images/Line 173.png" alt="">
+                                          <h2 class="card-title uppercase font-main mt-4">Vegetables Burger</h2>
+                                          <p class="font-main">Barbecue Italian cuisine pizza</p>
+                                    </div>
+                              </div>
+                              <div class="card bg-base-100 w-72 shadow-sm rounded-none">
+                                    <figure class="px-10 pt-10">
+                                          <img src="/images/pizza 1.png" alt="Pizza" class="w-24 h-24" />
+                                    </figure>
+                                    <div class="card-body items-center text-center">
+                                          <img src="/images/Line 173.png" alt="">
+                                          <h2 class="card-title uppercase font-main mt-4">Special Pizza</h2>
+                                          <p class="font-main">Barbecue Italian cuisine pizza</p>
+                                    </div>
+                              </div>
+                              <div class="card bg-base-100 w-72 shadow-sm rounded-none">
+                                    <figure class="px-10 pt-10">
+                                          <img src="/images/french-fries 1.png" alt="French Fries" class="w-24 h-24" />
+                                    </figure>
+                                    <div class="card-body items-center text-center">
+                                          <img src="/images/Line 173.png" alt="">
+                                          <h2 class="card-title uppercase font-main mt-4">Special French Fries</h2>
+                                          <p class="font-main">Barbecue Italian cuisine</p>
+                                    </div>
+                              </div>
+                              <div class="card bg-base-100 w-72 shadow-sm rounded-none">
+                                    <figure class="px-10 pt-10">
+                                          <img src="/images/fried-shrimp-prawn-cake-white-plate 1 (1).png" alt="Chicken"
+                                                class="w-24 h-24" />
+                                    </figure>
+                                    <div class="card-body items-center text-center">
+                                          <img src="/images/Line 173.png" alt="">
+                                          <h2 class="card-title uppercase font-main mt-4">Cuisine Chicken</h2>
+                                          <p class="font-main">Japanese Cuisine Chicken</p>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+                 
+            </div> <div class="flex gap-4 justify-center mt-6 ">
+                        <button id="prevSlide1" class="bg-white inline-block md:hidden hover:bg-white p-2 rounded-full">
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                    class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                              </svg>
+                        </button>
+                        <button id="nextSlide1" class="bg-white  inline-block md:hidden hover:bg-white p-2 rounded-full">
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                    class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                              </svg>
+                        </button>
+                  </div>
+      </div>
+</div>
+
+      <!------------------------
+             Section 005
+      ------------------------->
+
+      <div class="bg-cover bg-center h-auto md:h-[690px]" style="background-image: url('/images/contact.jpeg');">
+            <div class="pl-7 max-w-screen-xl mx-auto lg:pl-0 pt-10 pb-10 lg:pt-32">
+                 <div class="flex items-center gap-2">
+                  <img src="images/rectangle.png" alt="" class="w-4 h-4">
+                  <h2 class="text-[#BD1F17] roboto font-bold text-xl">Book Now</h2>
+                 </div>
+                 <h1 class="font-main font-bold text-5xl text-white mt-4">Book Your Table</h1>
+                 <p class="robot text-base text-white mt-4">Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo <br> molestie vel, ornare non id blandit netus.</p>
+      <div class="mt-5">
+            <div class="flex flex-col md:flex-row gap-4">
+                  <input type="text" placeholder="Your Name*"
+                        class="input input-bordered w-full max-w-xs bg-transparent border-[#E5E7EB] text-white placeholder-[#E5E7EB] rounded-none focus:border-white" />
+                        <input type="email" placeholder="Your Email"
+                              class="input input-bordered w-full max-w-xs bg-transparent border-[#E5E7EB] text-white placeholder-[#E5E7EB] rounded-none focus:border-white" />
+            </div>
+            <div class="flex flex-col md:flex-row gap-4 mt-5">
+                  <input type="date" placeholder="Reservation Date"
+                        class="input input-bordered w-full max-w-xs bg-transparent border-[#E5E7EB] text-white placeholder-[#E5E7EB] rounded-none focus:border-white" />
+                        <input type="number" placeholder="Total People"
+                              class="input input-bordered w-full max-w-xs bg-transparent border-[#E5E7EB] text-white placeholder-[#E5E7EB] rounded-none focus:border-white" />
+
+            </div>
+            <div class="mt-5">
+                  <textarea placeholder="Message" class="textarea textarea-bordered textarea-lg w-full  max-w-xs md:max-w-[660px] bg-transparent border-[#E5E7EB] text-white placeholder-[#E5E7EB] rounded-none focus:border-white "></textarea>
+            </div>
+            <div class="mt-6 mb-20">
+                  <a class=" bg-[#FEBF00] roboto border-none py-4 px-6 text-base font-bold">Book Now</a>
+            </div>
+      </div>
+            
+      </div>
+</div>
+
+
+      <!------------------------
+            Section 006
+      ------------------------->
+<div class="bg-white pt-14 pb-0 lg:pb-20 relative">
+      <div id="testimonialSlider" class="relative overflow-hidden max-w-screen-xl mx-auto bg-white pt-14 pb-20 z-40">
+            <!-- Title Section with Arrows -->
+            <div class="flex items-center gap-2 ml-6 md:ml-0">
+                  <img src="images/rectangle.png" alt="" class="w-4 h-4">
+                  <h2 class="text-[#BD1F17] roboto font-bold text-base">Crispy, Every Bite Taste</h2>
+                  <div class="flex gap-4 ml-auto">
+                        <button id="prevSlideTestimonial"
+                              class="bg-white hidden md:inline-block hover:bg-white p-2 rounded-full">
+                              <!-- Previous Arrow SVG -->
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M15 19l-7-7 7-7" />
+                              </svg>
+                        </button>
+                        <button id="nextSlideTestimonial"
+                              class="bg-white hidden md:inline-block hover:bg-white p-2 rounded-full">
+                              <!-- Next Arrow SVG -->
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M9 5l7 7-7 7" />
+                              </svg>
+                        </button>
+                  </div>
+            </div>
+
+            <h1 class="font-main text-5xl text-black mt-3 mb-7 ml-6 md:ml-0">What Some of my Customers Say</h1>
+
+            <!-- Slider container with single-slide display -->
+            <div id="testimonialSliderContainer" class="flex transition-transform duration-500 ease-in-out"
+                  style="width: 100%;">
+                  <!-- Slide 1 -->
+                  <div class="p-7 lg:p-0" style="min-width: 100%;">
+                        <div class="card card-side bg-base-100 shadow-xl flex-col-reverse md:flex-row">
+                              <div class="card-body bg-[#FEBF00] p-16">
+                                    <p class="max-w-md roboto text-base font-normal relative">
+                                          <img src="/images/quote.png" alt="" class="absolute -top-1 -left-5">You can't go wrong with Chicken Mandi, I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi
+                                          chicken is a bit dry). I would defiantly recommend it.
+                                    </p>
+                                    <div
+                                          class="card-actions flex justify-between items-center pt-16 md:pt-40 border-b-2 border-black">
+                                          <a class="font-main text-lg text-left text-black group">
+                                                <span class="uppercase font-bold">Khalid Al Dawsry</span><br>
+                                                <span class="font-normal">Jeddah, Saudi</span>
+                                          </a>
+                                          <img src="/images/profile.png" alt=""
+                                                class="border-x-8 border-[#BD1F17] border-t-0 border-l-0 border-r-0">
+                                    </div>
+                              </div>
+                              <figure class="relative rounded-none">
+                                    <img src="/images/video.png" alt="Movie" class="h-[300px] md:h-full w-full" />
+                                    <div class="absolute inset-0 bg-black opacity-50"></div>
+                                    <div class="absolute inset-0 flex items-center justify-center">
+                                          <img src="/images/play.png" alt="Play"
+                                                class="opacity-100 filter brightness-125 drop-shadow-lg">
+                                    </div>
+                              </figure>
+                              <div class="absolute bottom-12">
+                                    <img src="/images/Group.svg" alt="" class="w-7">
+                              </div>
+                        </div>
+                  </div>
+
+                  <!-- Slide 2 -->
+                  <div class="p-7 lg:p-0" style="min-width: 100%">
+                        <div class="card card-side bg-base-100  flex-col-reverse md:flex-row">
+                              <div class="card-body bg-[#FEBF00] p-16">
+                                    <p class="max-w-md roboto text-base font-normal relative">
+                                          <img src="/images/quote.png" alt="" class="absolute -top-1 -left-5">You can't go wrong with Chicken Mandi, I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi
+                                          chicken is a bit dry). I would defiantly recommend it.
+                                    </p>
+                                    <div
+                                          class="card-actions flex justify-between items-center border-b-2 border-black pt-16 md:pt-40">
+                                          <a class="font-main text-lg text-left text-black group">
+                                                <span class="uppercase font-bold">Ahmed Ali</span><br>
+                                                <span class="font-normal">Riyadh, Saudi</span>
+                                          </a>
+                                          <img src="/images/profile.png" alt=""
+                                                class="border-8 border-[#BD1F17]  border-t-0 border-l-0 border-r-0">
+                                    </div>
+                              </div>
+                              <figure class="relative rounded-none">
+                                    <img src="/images/video.png" alt="Movie" class="h-[300px] md:h-full w-full" />
+                                    <div class="absolute inset-0 bg-black opacity-50"></div>
+                                    <div class="absolute inset-0 flex items-center justify-center">
+                                          <img src="/images/play.png" alt="Play"
+                                                class="opacity-100 filter brightness-125 drop-shadow-lg">
+                                    </div>
+                              </figure>
+                              <div class="absolute bottom-12">
+                                    <img src="/images/Group.svg" alt="" class="w-7">
+                              </div>
+                        </div>
+                  </div>
+            </div>
+            
+      </div>
+      <div class="absolute top-[47%] right-0 z-5 hidden md:inline-block">
+            <img src="/images/12.png" alt="" class="w-64">
+      </div>
+      <div class="absolute top-32 left-0 z-5 hidden md:inline-block">
+            <img src="/images/221.png" alt="" class="w-24">
+      </div>
+
+      
+</div>
+     
+
+
+      <!----------------
+      Footer Section
+      ------------------>
+
+
+            <div class="relative bg-cover bg-center h-auto md:h-[650px]" style="background-image: url('/images/footer.jpeg');">
+             <!-- Black overlay -->
+                  <div class="absolute inset-0 bg-black opacity-80 pointer-events-none"></div>
+
+      <!-- Content -->
+      <div class="relative text-center pt-10 z-10">
+            <h1 class="text-white text-4xl p-5 uppercase font-main">We’re ready to give you the best dining experiences
+            </h1>
+
+            <div class="max-w-screen-xl mx-0 md:mx-auto p-0 md:p-8 rounded-3xl">
+                  <div class="flex flex-col md:flex-row justify-around">
+                        <!-- First Section -->
+                        <div class="text-center items-center justify-start md:justify-center">
+                              <p><img src="images/clock.png" alt="" class="w-8 h-8 mx-auto mb-4"></p>
+                              <div>
+                                    <h2 class="text-2xl font-extrabold text-white mt-2 mb-2 uppercase font-main">Opening hours</h2>
+                                    <p class="text-base font-medium text-white roboto">Monday - Sunday <br>
+                                    9:00 AM to 11:30 PM</p>
+                              </div>
+                        </div>
+                        <!-- Second Section -->
+                        <div class="text-center items-center justify-start md:justify-center">
+                              <p><img src="images/Vector.png" alt="" class="w-8 h-8 mx-auto mb-4"></p>
+                              <div>
+                                    <h2 class="text-2xl font-extrabold text-white mt-2 mb-2 uppercase font-main">
+                                    LET'S TALK</h2>
+                                    <p class="text-base font-medium text-white roboto">Phone: 1-800-222-4545 <br>Fax: 1-800-222-4545</p>
+                              </div>
+                        </div>
+                        <!-- Third Section -->
+                        <div class="text-center items-center justify-start md:justify-center">
+                              <p><img src="images/mail.png" alt="" class="w-8 h-8 mx-auto mb-4"></p>
+                              <div>
+                                    <h2 class="text-2xl font-extrabold text-white mt-2 mb-2 uppercase font-main">BOOK A TABLE</h2>
+                                    <p class="text-base font-medium text-white roboto">Email: demo@website.com <br> Support: support@website.com</p>
+                              </div>
+                        </div>
+                        <!-- Fourth Section -->
+                        <div class="text-center items-center justify-start md:justify-center">
+                              <p><img src="images/map-pin.png" alt="" class="w-8 h-8 mx-auto mb-4"></p>
+                              <div>
+                                    <h2 class="text-2xl font-extrabold text-white mt-2 mb-2 uppercase font-main">Our Address</h2>
+                                    <p class="text-base font-medium text-white roboto">123 Stree New York City , <br> United States Of America.</p>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+             <div class="flex justify-center gap-4 mt-28">
+            <img src="images/Frame (1).png" alt="">
+            <img src="images/Frame (2).png" alt="">
+            <img src="images/Frame (3).png" alt="">
+            <img src="images/Frame (4).png" alt="">
+      </div>
+        <p class="text-center montserrat text-white mt-4 text-lg pb-20">© 2023 <span class="text-[#FEBF00]">Niomax</span> All Rights Reserved</p>
+      </div>
+
+     
+            </div>
+
+
+      <!-- Javascript -->
+      
+    <script>
+
+      //Second Section (TAB)
+      let tabs = document.querySelectorAll(".tab");
+      let indicator = document.querySelector(".indicator");
+      let panels = document.querySelectorAll(".tab-panel");
+
+       indicator.style.width = tabs[0].getBoundingClientRect().width + 'px';
+       indicator.style.left = tabs[0].getBoundingClientRect().left - tabs[0].parentElement.getBoundingClientRect().left + 'px';
+
+       tabs.forEach(tab => {
+             tab.addEventListener("click", () => {
+                   let tabTarget = tab.getAttribute("aria-controls");
+
+                   // Update the indicator's width and position
+                   indicator.style.width = tab.getBoundingClientRect().width + 'px';
+                   indicator.style.left = tab.getBoundingClientRect().left - tab.parentElement.getBoundingClientRect().left + 'px';
+
+                   // First, remove the white text class from all tabs
+                   tabs.forEach(t => {
+                         t.querySelector("span").classList.remove("text-white"); // Reset all tabs to black text
+                  });
+
+                  panels.forEach(panel => {
+                        let panelId = panel.getAttribute("id");
+                         if (tabTarget === panelId) {
+                              panel.classList.remove("invisible", "opacity-0");
+                              panel.classList.add("visible", "opacity-100");
+                               tab.querySelector("span").classList.add("text-white"); // Set clicked tab text to white
+                         } else {
+                               panel.classList.add("invisible", "opacity-0");
+                         }
+                   });
+             });
+       });
+
+
+       //(SLider)
+
+      const slider = document.getElementById('slider');
+            const slides = slider.children;
+            let currentIndex = 0;
+
+            function updateSlidePosition() {
+                  const slideWidth = slider.offsetWidth; // Use the width of the entire slider
+                  slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+            }
+
+            function nextSlide() {
+                  currentIndex = (currentIndex + 1) % slides.length;
+                  updateSlidePosition();
+            }
+
+            function prevSlide() {
+                  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                  updateSlidePosition();
+            }
+
+            document.getElementById('nextSlide').addEventListener('click', nextSlide);
+            document.getElementById('prevSlide').addEventListener('click', prevSlide);
+
+            // Autoplay
+            setInterval(nextSlide, 3000); 
+
+            function nextSlide1() {
+                  currentIndex = (currentIndex + 1) % slides.length;
+                  updateSlidePosition();
+            }
+
+            function prevSlide1() {
+                  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                  updateSlidePosition();
+            }
+
+            document.getElementById('nextSlide1').addEventListener('click', nextSlide1);
+            document.getElementById('prevSlide1').addEventListener('click', prevSlide1);
+
+            // Autoplay
+            setInterval(nextSlide1, 2000);
+
+
+
+
+
+            
+
+            const testimonialSliderContainer = document.getElementById('testimonialSliderContainer');
+                  const testimonialSlides = testimonialSliderContainer.children;
+                  let currentTestimonialIndex = 0;
+
+                  function updateTestimonialSlidePosition() {
+                        testimonialSliderContainer.style.transform = `translateX(-${currentTestimonialIndex * 100}%)`;
+                  }
+
+                  function nextTestimonialSlide() {
+                        currentTestimonialIndex = (currentTestimonialIndex + 1) % testimonialSlides.length;
+                        updateTestimonialSlidePosition();
+                  }
+
+                  function prevTestimonialSlide() {
+                        currentTestimonialIndex = (currentTestimonialIndex - 1 + testimonialSlides.length) % testimonialSlides.length;
+                        updateTestimonialSlidePosition();
+                  }
+
+                  // Add event listeners for manual control
+                  document.getElementById('nextSlideTestimonial').addEventListener('click', nextTestimonialSlide);
+                  document.getElementById('prevSlideTestimonial').addEventListener('click', prevTestimonialSlide);
+
+                  // Autoplay the slider
+                  setInterval(nextTestimonialSlide, 3000); // Change the interval as needed
+
+
+                   
+
+</script>
+
+</body>
+</html>
